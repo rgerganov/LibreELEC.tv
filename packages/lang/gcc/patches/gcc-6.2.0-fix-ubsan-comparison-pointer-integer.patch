@@ -1,0 +1,11 @@
+diff -Naur gcc-6.2.0.orig/gcc/ubsan.c gcc-6.2.0/gcc/ubsan.c
+--- gcc-6.2.0.orig/gcc/ubsan.c    2017-07-13 14:55:44.175133226 -0400
++++ gcc-6.2.0/gcc/ubsan.c    2017-07-13 14:56:32.977783780 -0400
+@@ -1469,7 +1469,7 @@
+ 
+   expanded_location xloc = expand_location (loc);
+   if (xloc.file == NULL || strncmp (xloc.file, "\1", 2) == 0
+-      || xloc.file == '\0' || xloc.file[0] == '\xff'
++      || xloc.file[0] == '\0' || xloc.file[0] == '\xff'
+       || xloc.file[1] == '\xff')
+     return false;
