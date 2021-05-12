@@ -1,0 +1,10 @@
+PKG_NAME="rtlsdr"
+PKG_VERSION="0847e93e0869feab50fd27c7afeb85d78ca04631"
+PKG_SHA256="42986f8cd92abf6231867f040ca5ebc66b6a4c479489214b9e596cb0d9f842fd"
+PKG_LICENSE="GPL"
+PKG_SITE="https://github.com/osmocom/rtl-sdr"
+PKG_URL="https://github.com/osmocom/rtl-sdr/archive/${PKG_VERSION}.tar.gz"
+PKG_DEPENDS_HOST="toolchain:host"
+PKG_DEPENDS_TARGET="toolchain libusb"
+PKG_LONGDESC="turns your Realtek RTL2832 based DVB dongle into a SDR receiver"
+
